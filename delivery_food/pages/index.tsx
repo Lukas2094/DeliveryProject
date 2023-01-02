@@ -49,7 +49,7 @@ export default function Home() {
            </Containerinput>
 
            <BannerHomeContent>
-               <BannerHome src="https://www.saboravida.com.br/wp-content/uploads/2022/01/mcdonalds-brinquedos-do-mclanche-feliz-1.webp"/>
+               <BannerHome src="https://www.mcdonalds.com.br/uploads/592_3_1_banner_home_1440x650_cb1d3e6863.png"/>
            </BannerHomeContent>
 
            <ContainDeskp>

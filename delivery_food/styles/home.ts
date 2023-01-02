@@ -19,8 +19,8 @@ export const TextsContent = styled(Flex)`
     width: 60%;
 
     flex-direction: column;
-    align-items: center;
-    margin: 0px 10px;
+    /* align-items: center; */
+    /* margin: 0px 10px; */
 `;
 
 export const Welcome = styled.span`
@@ -43,7 +43,7 @@ export const Texts = styled.a`
 
 export const ContentMenuBurguer = styled.button`
     width: auto;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
 
 `;
 
