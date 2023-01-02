@@ -1,4 +1,4 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex, Image ,Text } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
 export const ContentHeader = styled.header`
@@ -8,6 +8,10 @@ export const ContentHeader = styled.header`
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
 
 `;
 
@@ -46,22 +50,82 @@ export const ContentMenuBurguer = styled.button`
 export const ContentSearch = styled.div`
     position: absolute;
     right: 20px;
-    z-index: 1;
+    z-index: 50;
     margin-top: 20px;
+
+    @media (min-width: 1024px) {
+        margin-top: 70px;
+    }
 `;
 
 export const Containerinput = styled.div`
     width: 100%;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
 `;
 
 export const BannerHomeContent = styled.div`
     width: 100%;
     height: 190px;
+ 
 
+    @media (min-width: 1024px) {
+        height: 725px;  
+        margin-top: 20px; 
+    }
 `;
 export const BannerHome = styled(Image)`
     width: 100%;
     height: 100%;
 
     border-radius: 4px;
+`;
+
+
+export const ContainerCards = styled(Flex)`
+    width: 100%;
+    height: auto;
+
+    margin: 20px 0px;
+    padding: 0 10px;
+    overflow-x: scroll;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 1024px) {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        overflow-x: auto;
+    }
+`;
+
+export const ContainDeskp = styled.div`
+    width: 100%;
+    height: auto;
+
+    margin: 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+`;
+
+export const Searchtext = styled(Text)`
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+
 `;

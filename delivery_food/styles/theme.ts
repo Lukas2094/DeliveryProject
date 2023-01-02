@@ -3,8 +3,9 @@ import styled from '@emotion/styled';
 export const ContainerMain = styled.body`
     width: 100%;
     height: auto;
+    max-width: 1050px;
 
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 
@@ -12,5 +13,6 @@ export const ContainerMain = styled.body`
 
     @media (max-width: 768px) {
         padding: 0 10px;
+        max-width: 100%;
     }
 `;
