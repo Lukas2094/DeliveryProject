@@ -9,4 +9,8 @@ export const ContainerMain = styled.body`
     box-sizing: border-box;
 
     background-color: #f5f5f5;
+
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
 `;
