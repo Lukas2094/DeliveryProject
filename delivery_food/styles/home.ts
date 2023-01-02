@@ -62,4 +62,6 @@ export const BannerHomeContent = styled.div`
 export const BannerHome = styled(Image)`
     width: 100%;
     height: 100%;
+
+    border-radius: 4px;
 `;
