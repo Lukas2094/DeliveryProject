@@ -65,7 +65,7 @@ export default function Home() {
                     password={'text'}
                 />
                
-                <Select size={'lg'} placeholder='Todos os hamburgueres'>
+                <Select size={'lg'} placeholder='Todos os hamburgueres' background={'white'}>
                   <option value='option1'>Option 1</option>
                   <option value='option2'>Option 2</option>
                   <option value='option3'>Option 3</option>
