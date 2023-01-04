@@ -51,7 +51,7 @@ export default function Products({
                <AiOutlineArrowLeft color='white' size={'25'}/>
             </Return>
 
-            <Title>{title}</Title>
+            <Title>{title}Produto</Title>
 
 
             <Return>
@@ -76,7 +76,7 @@ export default function Products({
 
         <ContentConteudo>
             <Conteudo>
-                2 Blends de carne de 150g, Queijo Cheddar, Bacon Caramelizado, Salada, Molho da casa, Pão brioche artesanal,
+                2 Blends de carne de 150g, Queijo Cheddar, Bacon Caramelizado, Salada, Molho da casa, Pão brioche artesanal,{description}
             </Conteudo>
         </ContentConteudo>
 
