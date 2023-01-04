@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineArrowLeft, AiOutlineHeart } from 'react-icons/ai';
 import Button from '../../src/components/Buttons';
 import Header from '../../src/components/Header';
-import { Container, 
+import { Container, ContentMain ,
     Redirects , 
     Return,
     Title ,
@@ -40,6 +40,10 @@ export default function Products({
     count,
 } : TitlesProduct) {
   return (
+
+    <ContentMain>
+    <Header logo="https://cdn-icons-png.flaticon.com/512/732/732217.png"/>
+
       <Container>
         <Redirects>
 
@@ -107,5 +111,6 @@ export default function Products({
         </ContentAdd>
 
       </Container>
+    </ContentMain> 
   );
 }

@@ -1,6 +1,11 @@
 import { Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
+export const ContentMain = styled.section`
+    width:100%;
+    height: auto;
+`;
+
 export const Container = styled(Flex)`
     width: 100%;
     height: auto;
@@ -13,6 +18,7 @@ export const Container = styled(Flex)`
     @media (min-width: 1024px) {
         max-width: 600px;
         margin: 0 auto;
+        margin-top: 15px;
     };
 `;
 
