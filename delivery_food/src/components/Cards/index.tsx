@@ -26,7 +26,9 @@ export default function Cards({
   return (
     <InfoCard>
          <ContainerBurguer>
-            <Imageburguer src={image}/>
+            <a href="/Products">
+              <Imageburguer src={image}/>
+            </a>      
          </ContainerBurguer>
 
         <FormatburguerContent>
