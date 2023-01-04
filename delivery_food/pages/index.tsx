@@ -10,16 +10,34 @@ import { ContentHeader ,
   BannerHome , 
   ContainerCards , 
   ContainDeskp , 
-  Searchtext ,} from "../styles/home";
+  Searchtext , ContainerButtonMobile} from "../styles/home";
+  import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    IconButton
+  } from '@chakra-ui/react';
 import {BiMenu} from 'react-icons/bi';
 import {AiOutlineSearch} from 'react-icons/ai'
 import { Select } from '@chakra-ui/react'
 import Inputs from "../src/components/Inputs";
 import Cards from "../src/components/Cards";
 import Header from "../src/components/Header";
-
+import Button from "../src/components/Buttons";
+import React from "react";
 export default function Home() {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
+    <>
       <ContainerMain>
            <ContentHeader>
               <TextsContent>
@@ -28,7 +46,41 @@ export default function Home() {
               </TextsContent>
 
               <ContentMenuBurguer>
-                <BiMenu size={'25px'} color={'orange'}/>
+                <Menu>
+                  <MenuButton
+                    as={IconButton}
+                    aria-label='Options'
+                    icon={<BiMenu color="orange"/>}
+                    variant='outline'
+                  />
+                  <MenuList>
+                    <MenuItem >
+                      Início
+                    </MenuItem>
+                    <MenuItem  >
+                      Burguers
+                    </MenuItem>
+                    <MenuItem >
+                      Serviços
+                    </MenuItem>
+                    <MenuItem  >
+                      Contato
+                    </MenuItem>
+
+                   <ContainerButtonMobile>
+                        <Button
+                          redirect="/Login"
+                          description='Login'
+                          action=''
+                          color='white'
+                          bg={'orange'}
+                        />
+                   </ContainerButtonMobile>
+                
+                  </MenuList>
+                </Menu>
+
+
               </ContentMenuBurguer>           
            </ContentHeader>
 
@@ -125,6 +177,6 @@ export default function Home() {
                
            </ContainerCards>
       </ContainerMain>
-
+    </>
   )
 }

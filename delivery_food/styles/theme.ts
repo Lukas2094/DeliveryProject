@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ContainerMain = styled.body`
+export const ContainerMain = styled.main`
     width: 100%;
     height: auto;
     max-width: 1050px;

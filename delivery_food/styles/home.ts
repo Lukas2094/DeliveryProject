@@ -43,6 +43,7 @@ export const Texts = styled.a`
 
 export const ContentMenuBurguer = styled.button`
     width: auto;
+    z-index: 100;
     /* margin: 0px 20px; */
 
 `;
@@ -97,10 +98,12 @@ export const ContainerCards = styled(Flex)`
     justify-content: space-between;
 
     @media (min-width: 1024px) {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 90px;
         overflow-x: auto;
+        justify-content: flex-start;
+        gap: 15px;
     }
 `;
 
@@ -127,5 +130,17 @@ export const Searchtext = styled(Text)`
     line-height: 39px;
 
     color: #000000;
+
+`;
+
+export const ContainerButtonMobile = styled.div`
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+
+
+    @media(min-width: 1024px) {
+        display: none;
+    }
 
 `;
