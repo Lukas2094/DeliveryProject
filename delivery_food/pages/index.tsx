@@ -11,13 +11,16 @@ import { ContentHeader ,
   ContainerCards , 
   ContainDeskp , 
   Searchtext , ContainerButtonMobile} from "../styles/home";
+
   import {
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
-    IconButton
+    IconButton,
+    Link
   } from '@chakra-ui/react';
+
 import {BiMenu} from 'react-icons/bi';
 import {AiOutlineSearch} from 'react-icons/ai'
 import { Select } from '@chakra-ui/react'
@@ -55,10 +58,10 @@ export default function Home() {
                   />
                   <MenuList>
                     <MenuItem >
-                      Início
+                      <Link href="/">Início</Link> 
                     </MenuItem>
-                    <MenuItem  >
-                      Burguers
+                    <MenuItem>
+                      <Link href="/Products">Burguers</Link> 
                     </MenuItem>
                     <MenuItem >
                       Serviços

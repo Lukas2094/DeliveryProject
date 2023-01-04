@@ -21,7 +21,7 @@ export default function Header({logo} : Logo) {
 
         <ContainerListMenu>
             <ListMenu>Início</ListMenu>
-            <ListMenu>Burgers</ListMenu>
+            <ListMenu href='/Products'>Burgers</ListMenu>
             <ListMenu>Serviços</ListMenu>
             <ListMenu>Contato</ListMenu>
         </ContainerListMenu>
