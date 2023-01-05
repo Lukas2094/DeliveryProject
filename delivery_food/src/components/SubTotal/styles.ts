@@ -11,6 +11,7 @@ export const ContainSubTotal = styled(Flex)`
     border-radius: 8px;
 
     padding: 20px;
+    margin: 15px 0px;
 
 `;
 
