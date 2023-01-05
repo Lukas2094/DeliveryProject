@@ -29,6 +29,7 @@ import Cards from "../src/components/Cards";
 import Header from "../src/components/Header";
 import Button from "../src/components/Buttons";
 import React from "react";
+import { SEO } from "../src/components/SEO";
 export default function Home() {
 
   const settings = {
@@ -41,6 +42,11 @@ export default function Home() {
 
   return (
     <>
+      <SEO 
+      title="B7 Delivery"
+      description={'a melhor Hamburgueria de SP'}
+      />
+      
       <ContainerMain>
            <ContentHeader>
               <TextsContent>

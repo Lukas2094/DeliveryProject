@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineArrowLeft, AiOutlineHeart } from 'react-icons/ai';
 import Button from '../../src/components/Buttons';
 import Header from '../../src/components/Header';
+import { SEO } from '../../src/components/SEO';
 import { Container, ContentMain ,
     Redirects , 
     Return,
@@ -42,6 +43,10 @@ export default function Products({
   return (
 
     <ContentMain>
+        <SEO 
+        title="Produtos B7 Delivery"
+        description={'a melhor Hamburgueria de SP'}
+        />
     <Header logo="https://cdn-icons-png.flaticon.com/512/732/732217.png"/>
 
       <Container>
