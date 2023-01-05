@@ -30,6 +30,7 @@ import Header from "../src/components/Header";
 import Button from "../src/components/Buttons";
 import React from "react";
 import { SEO } from "../src/components/SEO";
+import Flicking from "@egjs/react-flicking";
 export default function Home() {
 
   const settings = {
@@ -108,10 +109,13 @@ export default function Home() {
                     password={'text'}
                 />
            </Containerinput>
-
-           <BannerHomeContent>
+          
+          <Flicking>
+            <BannerHomeContent>
                <BannerHome src="https://www.mcdonalds.com.br/uploads/592_3_1_banner_home_1440x650_cb1d3e6863.png"/>
-           </BannerHomeContent>
+            </BannerHomeContent>
+          </Flicking>
+
 
            <ContainDeskp>
               <Searchtext>Pesquise o seu Hamburguer favorito!</Searchtext>
