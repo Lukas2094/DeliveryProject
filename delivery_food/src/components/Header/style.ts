@@ -24,6 +24,7 @@ export const ContainerImage = styled(Link)`
 export const ImageLogo = styled(Image)`
     width: 100%;
     height: 100%;
+    object-fit: contain;
 `;
 
 export const ContainerListMenu = styled.ul`

@@ -102,7 +102,7 @@ export default function Products({
 
         <ContentAdd>
             <Button
-                redirect=""
+                redirect="/Bag"
                 description='Adicionar à sacola'
                 action=''
                 color='white'

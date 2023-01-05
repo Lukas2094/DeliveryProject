@@ -14,24 +14,26 @@ export default function SubTotalCards({
     frete,
 } : Subtotal) {
   return (
-    <ContainSubTotal>
-        <ContainValue>
-            <SubTotal>SubTotal <span>R$ 102,00{subtotal}</span></SubTotal>
-            <SubTotal>Frete    <span> -- {frete}</span></SubTotal>
-        </ContainValue>
-            <SubTotal>Total <span>R$ 102,00{subtotal}</span></SubTotal>
+    <>
+        <ContainSubTotal>
+            <ContainValue>
+                <SubTotal>SubTotal <span>R$ 102,00{subtotal}</span></SubTotal>
+                <SubTotal>Frete    <span> -- {frete}</span></SubTotal>
+            </ContainValue>
+                <SubTotal>Total <span>R$ 102,00{subtotal}</span></SubTotal>
 
-        <FormButtom action='' name=''>
-            <Button
-                redirect=""
-                description='Confirmar'
-                action=''
-                color='white'
-                bg={'orange'}
-            />
-        </FormButtom>
+            <FormButtom action='' name=''>
+                <Button
+                    redirect=""
+                    description='Confirmar'
+                    action=''
+                    color='white'
+                    bg={'orange'}
+                />
+            </FormButtom>
 
-</ContainSubTotal>
+        </ContainSubTotal>
+    </>
   );
 }
 
