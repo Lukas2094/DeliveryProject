@@ -113,6 +113,8 @@ export const ContainFrete = styled(Flex)`
     width: 100%;
     height: auto;
 
+    margin: 10px 0px;
+
     flex-direction: row;
     align-items: center;
 
