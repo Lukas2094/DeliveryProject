@@ -31,6 +31,7 @@ import Button from "../src/components/Buttons";
 import React from "react";
 import { SEO } from "../src/components/SEO";
 import Flicking from "@egjs/react-flicking";
+import Fade from 'react-reveal/Fade';
 export default function Home() {
 
   const settings = {
@@ -138,7 +139,7 @@ export default function Home() {
 
            </ContainDeskp>
            
-
+          <Fade bottom>
            <ContainerCards>
                <Cards 
                 count={1}
@@ -189,6 +190,7 @@ export default function Home() {
                />
                
            </ContainerCards>
+          </Fade>
       </ContainerMain>
     </>
   )

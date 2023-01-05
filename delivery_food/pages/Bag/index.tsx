@@ -22,7 +22,7 @@ import SubTotalCards from '../../src/components/SubTotal';
     ContentSend, 
     SendFrete, 
     ValueFrete,} from '../../styles/bag';
-    
+import Fade from 'react-reveal/Fade';    
 
 interface Bags {
     count: string;
@@ -49,8 +49,6 @@ export default function Bag({
     setState(!state)
   }
 
-  console.log(state)
-
   return (
      <Container>
         <Header logo="https://cdn-icons-png.flaticon.com/512/732/732217.png"/>
@@ -65,6 +63,7 @@ export default function Bag({
 
         </Redirects>
 
+        <Fade top>
         <Content>
            <ContainItems>
                <CountItems>{count}4 itens</CountItems>
@@ -103,7 +102,7 @@ export default function Bag({
              count={2}
            />
         </Content>
-
+    </Fade>
 
         <ContentTotal>
             <DescriptionFrete>
