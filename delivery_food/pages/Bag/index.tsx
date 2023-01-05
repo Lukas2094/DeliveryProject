@@ -1,5 +1,6 @@
 import React , {useState} from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
+import Button from '../../src/components/Buttons';
 import CardsBag from '../../src/components/CardsBag';
 import Header from '../../src/components/Header';
 
@@ -10,7 +11,7 @@ import Header from '../../src/components/Header';
     Title , 
     ContainItems , 
     CountItems,
-    ContentTotal , DescriptionFrete, ContainFrete, InputFrete, Confirm, ContentAddress, Address, ContentSend, SendFrete, ValueFrete} from '../../styles/bag';
+    ContentTotal , DescriptionFrete, ContainFrete, InputFrete, Confirm, ContentAddress, Address, ContentSend, SendFrete, ValueFrete, ContainSubTotal, ContainValue, SubTotal, FormButtom} from '../../styles/bag';
     
 
 interface Bags {
@@ -19,6 +20,7 @@ interface Bags {
     frete: string;
     time: string;
     address: string;
+    subtotal: string;
 }
 
 export default function Bag({
@@ -27,6 +29,7 @@ export default function Bag({
     frete,
     time,
     address,
+    subtotal,
 } : Bags)  {
 
 
@@ -105,16 +108,35 @@ export default function Bag({
             </ContainFrete>
             
             {state == false ? null : (
-            <ContentAddress>
-                <Address>
-                  {address}  Rua das Flores - Jardins da Serra - Campina Pequena
-                </Address>
-                <ContentSend>
-                    <SendFrete>Receba em até 20{time} minutos</SendFrete>
-                    <ValueFrete>R$ 12,50{frete}</ValueFrete>
-                </ContentSend>
-            </ContentAddress> 
+                <ContentAddress>
+                    <Address>
+                        {address}  Rua das Flores - Jardins da Serra - Campina Pequena
+                    </Address>
+                    <ContentSend>
+                        <SendFrete>Receba em até 20{time} minutos</SendFrete>
+                        <ValueFrete>R$ 12,50{frete}</ValueFrete>
+                    </ContentSend>
+                </ContentAddress> 
             )}
+
+            <ContainSubTotal>
+                <ContainValue>
+                    <SubTotal>SubTotal <span>R$ 102,00{subtotal}</span></SubTotal>
+                    <SubTotal>Frete    <span> -- {frete}</span></SubTotal>
+                </ContainValue>
+                    <SubTotal>Total <span>R$ 102,00{subtotal}</span></SubTotal>
+
+                <FormButtom action='' name=''>
+                    <Button
+                        redirect=""
+                        description='Confirmar'
+                        action=''
+                        color='white'
+                        bg={'orange'}
+                    />
+                </FormButtom>
+ 
+            </ContainSubTotal>
  
         </ContentTotal>
      </Container>
