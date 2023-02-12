@@ -18,6 +18,7 @@ export const Container = styled.div`
         margin: 0 auto;
     }
 
+
 `;
 
 export const Redirect = styled.a`
